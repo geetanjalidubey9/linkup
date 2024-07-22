@@ -1,0 +1,133 @@
+ /* .hero-container{
+  width: 100%;  
+  min-height: 100vh;
+  background-size: cover;
+  background-position: centre;
+  color: #000000;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.hero-text{
+  text-align: center;
+  max-width: 800px;
+}
+.hero-text h1{
+font-size: 60px;
+font-weight: 600;
+}
+.hero-text p{
+ max-width: 700px;
+ margin: 10px auto 20px;
+  }
+  .btn {
+    background-color:rgba(84, 53, 156, 0.895);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: black;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  }
+    */
+ 
+
+
+
+
+  .hero-container {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-container::before {
+  opacity: 0.7;
+  content: "";
+  position: absolute;
+  left: -25vw;
+  top: -10vw; 
+  width: 90vw;
+  height: 70vw; 
+  background-color: rgba(84, 53, 156, 0.895);
+  border-radius: 50%;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+  z-index: -20;
+}
+
+.hero-text {
+  text-align: center;
+  max-width: 80vw; 
+  padding: 0 20px; 
+}
+
+.hero-text h1 {
+  font-size: 6vw; 
+  font-weight: 600;
+}
+
+.hero-text p {
+  max-width: 70vw;
+  margin: 10px auto 20px;
+}
+
+.btn {
+  background-color: rgba(84, 53, 156, 0.998);
+  color: white;
+  border: none;
+  padding: 1vw 2vw; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6vw; 
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3vw; 
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: black;
+  box-shadow: 0px 0px 1vw 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 768px) {
+  .hero-container::before {
+    left: -10vw;
+    top: -5vw;
+    width: 80vw;
+    height: 60vw;
+  }
+
+  .hero-text h1 {
+    font-size: 8vw;
+  }
+
+  .hero-text p {
+    max-width: 80vw;
+  }
+
+  .btn {
+    padding: 2vw 4vw;
+    font-size: 2vw;
+    border-radius: 5vw;
+  }
+} 
+

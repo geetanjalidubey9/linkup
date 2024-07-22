@@ -1,0 +1,24 @@
+.about-us-container {
+
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.about-us-container img {
+height: 100vh;
+  margin-bottom: 0px;
+  max-width: 100%; 
+}
+.about-us-container .vision{
+  margin-bottom:50px ;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  max-width: 90vw;
+}

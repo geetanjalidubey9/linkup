@@ -1,0 +1,303 @@
+ /* body {
+   background: url(../../assets/home.png); 
+ } */
+
+
+.Home-container {
+
+  margin-left: 300px;
+  margin-top: 66px;
+  height: 110vh;
+  width: 100%;
+  position: fixed;
+  display: inline-block;
+}
+.search-bar::placeholder {
+  color: black;
+
+}
+
+.search-bar {
+
+  font-size: 15px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 50vw;   
+  padding: 15px;
+  margin: 20px;
+  margin-top: 2px;
+  background-color: rgba(84, 53, 156, 0.895);
+  color: rgb(0, 0, 0);
+}
+
+.search-buttons {
+  background-color: rgba(84, 53, 156, 0.998);
+  color: white;
+  border: none;
+  padding: 1vw 2vw; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1vw; 
+
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3vw; 
+  transition: all 0.3s ease;
+}
+.search-buttons:hover{
+  background-color: black;
+  box-shadow: 0px 0px 1vw 0px rgba(0, 0, 0, 0.75);
+}
+
+.groups-list{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+
+
+} 
+
+.users-list{
+ display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+
+  text-align: left;
+  list-style: none;
+  padding: 0;
+
+
+}
+.users-list li:hover,.groups-list li:hover{
+  color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.742);
+  box-shadow: 0px 0px 1vw 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.join,.add-friend{
+  background-color: rgba(84, 53, 156, 0.998);
+  color: white;
+  border: none;
+  padding: 1vw 2vw; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1vw; 
+
+  cursor: pointer;
+  border-radius: 3vw; 
+  transition: all 0.3s ease;
+  margin-left: 300px;
+
+}
+.join:hover,.add-friend:hover{
+
+  background-color: black;
+  box-shadow: 0px 0px 1vw 0px rgba(0, 0, 0, 0.75);
+
+}
+
+
+
+
+.users-list li,
+.groups-list li {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 60vw;
+  color: black;
+  border-radius: 35px;
+
+  padding: 3px;
+  background-color: rgba(211, 211, 211, 0.612);
+}
+
+
+
+.users-list li a {
+  color: #333;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.groups-list li a {
+  color: #333;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+
+.groups-list .join .users-list .add-friend {
+  background-color: black;
+  margin-left: 90px;
+  border-radius: 30px;
+  padding: 5px;
+  color: aliceblue;
+} 
+ .users-list .join {
+  background-color: black;
+  margin-left: 90px;
+  border-radius: 30px;
+  padding: 5px;
+  color: aliceblue; 
+ } 
+.create-group-button-container {
+  margin-bottom: 10px;
+}
+h2{
+ color: rgba(84, 53, 156, 0.895);
+ font-weight:bolder;
+}
+.create-group-button {
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(84, 53, 156, 0.895);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 15px;
+ 
+}
+
+.create-group-button:hover {
+  background-color: black;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.create-group-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.create-group-form-container {
+  
+  align-items: center;
+  margin-top: 2px;
+  background:white;
+  padding: 10px;
+  width: 40vw;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-group-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-group-input,
+.create-group-select {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-group-submit {
+  background-color: rgba(84, 53, 156, 0.998);
+  color: white;
+  border: none;
+  padding: 1vw 2vw; 
+  text-align: center;
+  
+  font-size: 1.1vw; 
+margin-top: 10px;
+  cursor: pointer;
+  border-radius: 3vw; 
+  transition: all 0.3s ease;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.create-group-submit:hover {
+  background-color: black;
+  box-shadow: 0px 0px 1vw 0px rgba(0, 0, 0, 0.75);
+}
+
+.close-button {
+
+  color: black;
+  background-color: white;
+  border: none;
+  font-weight: 800;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 4px;
+  margin-top: 2px;
+margin-left: 400px;
+
+}
+
+.close-button:hover {
+  color: rgb(171, 27, 27);
+}
+.create-group-form-container h2{
+  text-align: center;
+  margin: 8px;
+  margin-bottom: 10px;
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  .Home-container {
+    /* background-color: #333; */
+    margin-top: 66px;
+    height: 110vh;
+    width: 300px;
+    position: fixed;
+    display: inline-block;
+    transition: margin-left 0.3s ease; /* Smooth transition for margin change */
+    margin-left: 20px; /* Adjust this value to move it to the left */
+    /* z-index: -1; */
+    position: relative; /* Ensure it stays relative for z-indexing */
+  }
+
+  .create-group-submit {
+    background-color: rgba(84, 53, 156, 0.998);
+    color: white;
+    border: none;
+    padding: 10px; 
+    text-align: center;
+    width: 100px;
+    font-size: 2.1vw; 
+  margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10; 
+    transition: all 0.3s ease;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+}

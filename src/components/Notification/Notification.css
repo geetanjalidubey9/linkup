@@ -1,0 +1,112 @@
+
+.notification-page {
+  max-width: 600px;
+  margin: 90px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.notification-page h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.join-requests-list {
+  margin-top: 30px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.group-item {
+  background-color: #b3b3b3f4;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.request-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.join-request-item {
+  margin-bottom: 10px; /* Adjusted margin between each join request item */
+}
+
+.request-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-details p {
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+
+.accept-btn,
+.reject-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+.accept-btn:hover,
+.reject-btn:hover {
+  opacity: 0.8;
+}
+
+.notifications-container {
+  margin-top: 30px;
+}
+
+.notifications-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notification-item {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.notification-item p {
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+
+.notification-item .request-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-item .accept-btn,
+.notification-item .reject-btn {
+  padding: 8px 12px;
+}
+
+.notification-item .reject-btn {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+.notification-item .accept-btn:hover,
+.notification-item .reject-btn:hover {
+  opacity: 0.8;
+}

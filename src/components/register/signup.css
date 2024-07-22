@@ -1,0 +1,100 @@
+.signup-container {
+  margin-top: 20px;
+  /* height: 90vh; */
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position:fixed; */
+}
+
+.inner-signup-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 18px;
+  width: 370px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Adjust width to fill the container */
+}
+
+.signup-form input {
+  width: 100%; /* Set width to 100% to span the entire width of the container */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.signup-form button {
+  background-color: rgba(84, 53, 156, 0.895);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 6px 4px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.error {
+  color: red;
+}
+
+p {
+  color: white;
+}
+
+.inner-signup-container h2 {
+  align-items: center;
+  text-align: center;
+  color: rgba(84, 53, 156, 0.895);
+  font-size: 35px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Set width to 100% to span the entire width of the container */
+  padding: 9px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: rgb(5, 3, 3);
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: black;
+}
+
+p Link{
+  background-color: rgba(84, 53, 156, 0.895);
+  transition: all 0.3s ease;
+  
+  cursor: pointer;
+}
+p Link:hover {
+  color: black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}

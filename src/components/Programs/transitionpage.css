@@ -1,0 +1,205 @@
+ /* .transition-page {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 180vh;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%; 
+  margin-bottom: 20px; 
+}
+
+.page #image1 {
+
+  border-radius: 5px;
+  width: 350px; 
+  height: 350px; 
+  margin-bottom: 15px; 
+  margin-right: 280px;
+  position: relative;
+  opacity: 0; 
+  animation: mover 2s infinite alternate, fadeIn 2s infinite alternate;  
+}
+
+.page #image2 {
+
+  border-radius: 5px;
+  width: 350px; 
+  height: 350px; 
+  margin-bottom: 15px; 
+  margin-left: 280px;
+  position: relative;
+  opacity: 0;
+  animation: mover 2s infinite alternate, fadeIn 2s infinite alternate;  
+}
+
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-30px); } 
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.transition-page .page #image1 {
+  animation-delay: 0s; 
+
+}
+
+.transition-page .page #image2  {
+  animation-delay: 3s; 
+ 
+}
+
+.transition-page .page #image3  {
+  animation-delay: 6s; 
+
+}
+.page h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+  animation: mover 2s infinite alternate, fadeIn 2s infinite alternate; 
+}
+
+
+
+.page .text {
+  width: 30vw;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left; 
+  animation: mover 2s infinite alternate, fadeIn 2s infinite alternate;
+ 
+}
+
+.page1 .text  h1{
+  animation-delay: 2s;
+
+}
+.page2 .text  h1{
+  animation-delay: 5s;
+
+}
+.page3 .text  h1{
+  animation-delay: 7s;
+
+}
+.page1 .text  {
+  animation-delay: 3s;
+
+}
+.page2 .text  {
+  animation-delay: 6s;
+
+}
+.page3 .text  {
+  animation-delay: 9s;
+
+}
+
+  */
+
+  .transition-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure page takes up at least the full viewport height */
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Reduced padding for smaller screens */
+    border-radius: 10px;
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 800px; /* Limit maximum width for readability on smaller screens */
+    margin-bottom: 20px;
+    margin-top: 20px; /* Adjust margins as per your design */
+    /* background-color: #f0f0f0; Added background color for clarity */
+  }
+  
+  .page #image1, .page #image2, .page #image3 {
+    border-radius: 5px;
+    width: 80%; /* Adjusted width for smaller screens */
+    max-width: 300px; /* Limit maximum width for images on smaller screens */
+    height: auto; /* Ensures images scale proportionally */
+    margin-bottom: 10px; /* Reduced margin for smaller screens */
+    position: relative;
+    opacity: 0;
+    animation: mover 2s infinite alternate, fadeIn 2s infinite alternate;
+  }
+  
+  .page #image1 {
+    margin-right: 0; /* Adjusted margin for smaller screens */
+  }
+  
+  .page #image2 {
+    margin-left: 0; /* Adjusted margin for smaller screens */
+  }
+
+  
+  @keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .page h1 {
+    font-size: 24px; /* Reduced font size for smaller screens */
+    margin-bottom: 10px;
+    text-align: center; /* Adjust alignment as per your design */
+    animation: mover 2s infinite alternate, fadeIn 2s infinite alternate;
+  }
+  
+  .page .text {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 600px; /* Limit maximum width for readability on smaller screens */
+    font-size: 14px; /* Reduced font size for smaller screens */
+    line-height: 1.5;
+    text-align: center; /* Adjust alignment as per your design */
+    animation: mover 2s infinite alternate, fadeIn 2s infinite alternate;
+  }
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .page {
+      padding: 10px; /* Further reduced padding for smaller screens */
+    }
+  
+    .page #image1, .page #image2, .page #image3 {
+      width: 90%; /* Adjusted width for smaller screens */
+      max-width: none; /* Reset max-width for images on smaller screens */
+      margin-bottom: 5px; /* Further reduced margin for smaller screens */
+    }
+  
+    .page h1 {
+      font-size: 20px; /* Further reduced font size for smaller screens */
+    }
+  
+    .page .text {
+      font-size: 12px; /* Further reduced font size for smaller screens */
+    }
+  }
+  
