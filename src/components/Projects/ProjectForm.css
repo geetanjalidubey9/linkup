@@ -1,0 +1,98 @@
+/* General styles for the form container */
+.create-project-container {
+  margin-top: 20px;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-create-project-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 18px;
+  width: 320px; /* Reduced width */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the form */
+.create-project-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Adjust width to fill the container */
+}
+
+/* Input styles */
+.create-project-form input,
+.create-project-form textarea {
+  width: 100%; /* Set width to 100% to span the entire width of the container */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.create-project-form input[type="file"] {
+  padding: 3px;
+}
+
+.create-project-form input::placeholder,
+.create-project-form textarea::placeholder {
+  color: black;
+}
+
+/* Checkbox style */
+.create-project-form .checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.create-project-form .checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Button styles */
+.create-project-form button {
+  background-color: rgba(84, 53, 156, 0.895);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.create-project-form button:hover {
+  background-color: black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Error message style */
+.error {
+  color: red;
+}
+
+/* Form labels */
+.create-project-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgba(84, 53, 156, 0.895);
+}
+
+/* Form title */
+.inner-create-project-container h2 {
+  color: rgba(84, 53, 156, 0.895);
+  font-size: 35px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+#isPaid{
+margin-right:350px;
+margin-top: 2px;
+}

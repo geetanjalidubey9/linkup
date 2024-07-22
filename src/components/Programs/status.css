@@ -1,0 +1,26 @@
+.status-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .status-indicator.online {
+    background-color: green;
+  }
+  
+  .status-indicator.offline {
+    background-color: red;
+  }
+  
+  .status-text {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
