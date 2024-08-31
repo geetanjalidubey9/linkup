@@ -35,31 +35,4 @@ Ensure you have the following installed on your system:
 
 Node.js
 MongoDB
-Steps
-Clone the Repository
 
-bash
-Copy code
-git clone https://github.com/your-username/linkup.git
-cd linkup
-Install Dependencies
-
-bash
-Copy code
-npm install
-Set Up Environment Variables Create a .env file in the root directory with the following variables:
-
-env
-Copy code
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-SOCKET_PORT=your_socket_io_port
-Run the Application
-
-bash
-Copy code
-npm start
-Access the Application Open your browser and navigate to http://localhost:3000.
-
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for review.
