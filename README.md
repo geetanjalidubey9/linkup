@@ -14,22 +14,35 @@ LinkUp is a modern social media networking platform designed to connect people, 
 
 Features
 User Authentication: Secure login and registration using JWT tokens.
+
 Profile Management: Users can manage their profiles, including updating avatars and personal information.
+
 Friend Requests: Send and accept friend requests, similar to popular social networking platforms.
+
 Real-Time Messaging: Chat with friends and groups in real-time using Socket.IO.
+
 Groups: Create, manage, and join groups to connect with like-minded individuals.
+
 Notifications: Receive real-time notifications for friend requests, messages, and group activities.
+
 Online/Offline Status: See when your friends are online or offline.
+
 Search Functionality: Search for users and groups.
+
 Infinite Scroll: Scroll through chats and friends list seamlessly with infinite scrolling.
+
 Responsive Design: Fully responsive design for mobile, tablet, and desktop devices.
+
 Project Partner Selection: Browse profiles of users to find and invite potential project partners to collaborate on new or existing projects.
+
 Tech Stack
+
 Frontend: React, Redux, Axios, Socket.IO-client
 Backend: Node.js, Express, MongoDB, Socket.IO, JWT
 Database: MongoDB Atlas
 Real-Time Communication: Socket.IO
 Installation
+
 Prerequisites
 Ensure you have the following installed on your system:
 
